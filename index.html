@@ -6,11 +6,12 @@
   <title>DesignWorks Architecture Agency</title>
   <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
   <!-- Page Scroll Effects JS & CSS -->
-  <!-- <script src="js/velocity/modernizr.js"></script> -->
   <script src="js/velocity/velocity.min.js"></script>
   <script src="js/velocity/velocity.ui.min.js"></script>
   <script src="js/velocity/main.js"></script>
   <link rel="stylesheet" href="css/velocity/velocity.css">
+  <!-- Smooth Scrolling -->
+  <script src="./js/jquery.scrollTo.min.js"></script>
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/d0b8e988b1.js" crossorigin="anonymous"></script>
   <!-- Custom JS & CSS -->
@@ -24,47 +25,47 @@
   <div class="container">
     <section class="cd-section visible">
       <div>
-        <div class="content">
+        <div id="home" class="content">
           <h2>section 1</h2>
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section id="about" class="cd-section">
       <div>
         <div class="content">
           <h2>Section 2</h2>
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section id="project" class="cd-section">
       <div>
         <div class="content">
           <h2>Section 3</h2>
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section id="plan" class="cd-section">
       <div>
         <div class="content">
           <h2>Section 4</h2>
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section id="awards" class="cd-section">
       <div>
         <div class="content">
           <h2>Section 5</h2>
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section id="location" class="cd-section">
       <div>
         <div class="content">
           <h2>Section 6</h2>
         </div>
       </div>
     </section>
-    <section class="cd-section">
+    <section id="contact" class="cd-section">
       <div>
         <div class="content">
           <h2>Section 7</h2>
@@ -75,26 +76,38 @@
     <header class="header">
       <div class="header__inner">
         <div class="logo">
-          <a href="#">
-            <img src="./images/logo.png" alt="">
+          <a href="#" class="logo__link">
+            <img src="./images/logo.png" class="logo__img" alt="">
           </a>
         </div>
         <div class="gnb">
           <div class="gnb__menu">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Project</a>
-            <a href="#">Plan & History</a>
-            <a href="#">Awards</a>
-            <a href="#">Location</a>
-            <a href="#">Contact</a>
+            <a href="#home" class="gnb__link-menu">Home</a>
+            <a href="#about" class="gnb__link-menu">About</a>
+            <a href="#project" class="gnb__link-menu">Project</a>
+            <a href="#plan" class="gnb__link-menu">Plan & History</a>
+            <a href="#awards" class="gnb__link-menu">Awards</a>
+            <a href="#location" class="gnb__link-menu">Location</a>
+            <a href="#contact" class="gnb__link-menu">Contact</a>
           </div>
           <div class="gnb__slogan">We design places, not projects.</div>
+        </div>
+        <div class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </header>
   </div>
-
+  <!-- Button - Go To Top -->
+  <a href="#home" class="btn-top">
+    <img src="./images/gototop.png" alt="">
+  </a>
+  <!-- Button - Hiring -->
+  <a href="#" class="btn-hiring">
+    <i class="fas fa-comment-dots"></i>Hiring
+  </a>
   <nav>
     <ul class="cd-vertical-nav">
       <li><a href="#0" class="cd-prev inactive">Next</a></li>
