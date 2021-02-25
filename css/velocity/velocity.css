@@ -52,8 +52,8 @@ Main Components
 } */
 .cd-section h2 {
   /* line-height: 100vh; */
-  text-align: center;
-  font-size: 2.4rem;
+  /* text-align: center;
+  font-size: 2.4rem; */
 }
 /* .cd-section:first-of-type > div {
   background-color: #2b334f;
@@ -106,7 +106,7 @@ Main Components
 @media only screen and (min-width: 1050px) {
   .cd-section h2 {
     font-size: 4rem;
-    font-weight: 300;
+    /* font-weight: 300; */
   }
   [data-hijacking="on"] .cd-section {
     opacity: 0;
