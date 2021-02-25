@@ -23,6 +23,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /* Default CSS */
 body {
   background-color: #fff;
@@ -233,6 +239,91 @@ body {
   color: #fff;
   font-size: 22px;
   margin-top: 8px;
+}
+
+/* Contact */
+.contact__inner {
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #ddd;
+}
+
+.contact__feature {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  width: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.conatct__feature-item {
+  width: 50%;
+  padding: 20px;
+}
+
+.contact__title {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.contact-form__title {
+  display: block;
+  font-weight: bold;
+  margin: 18px 0 10px;
+}
+
+.contact-form__title span {
+  color: crimson;
+  font-weight: normal;
+}
+
+.contact-form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  transition: 0.5s;
+}
+
+.contact-form__input:hover {
+  border: 1px solid #0088cc;
+  box-shadow: 0 0 8px rgba(0, 136, 204, 0.5);
+}
+
+.contact-form__input:focus {
+  background-color: #eee;
+}
+
+.contact__btn-send {
+  background-color: #0088cc;
+  padding: 12px 20px;
+  margin-top: 15px;
+  color: #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.contact__btn-send:hover {
+  background-color: #000;
+}
+
+.contact__info-item {
+  margin-bottom: 10px;
+}
+
+.contact__info .contact__title {
+  font-size: 20px;
+}
+
+.contact__text {
+  margin: 15px 0;
+}
+
+.contact__text:last-child:not(.last) {
+  color: #0088cc;
 }
 
 /* Header */
