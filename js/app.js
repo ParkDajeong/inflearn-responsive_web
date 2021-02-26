@@ -24,4 +24,14 @@ $(function() {
     $(".gnb").removeClass("active");
     $(".menu-trigger").removeClass("active");
   });
+
+  // Plan - History Slide
+  $(".history-slide").slick({
+    arrows: false,
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+  });
 });
