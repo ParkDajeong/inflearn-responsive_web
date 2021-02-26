@@ -34,4 +34,15 @@ $(function() {
     slidesToShow: 4,
     slidesToScroll: 2,
   });
+
+  // Project - photo slide
+  $(".project__photo").slick({
+    arrows: false,
+    dots: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+  });
 });

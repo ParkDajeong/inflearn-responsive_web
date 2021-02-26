@@ -113,6 +113,172 @@ body {
   font-size: 18px;
 }
 
+/* Project */
+.project__inner {
+  background-color: #fff;
+  position: relative;
+  height: 100%;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+input[name=tabmenu] {
+  display: none;
+}
+
+.project__list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+#tab1:checked ~ .project__list {
+  margin-left: 0;
+}
+
+#tab2:checked ~ .project__list {
+  margin-left: -100%;
+}
+
+#tab3:checked ~ .project__list {
+  margin-left: -200%;
+}
+
+.project__tab {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.project__info-box {
+  position: relative;
+  width: 25%;
+  padding: 50px;
+}
+
+.project__info-box::before {
+  content: attr(data-text);
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-size: 130px;
+  color: #eee;
+}
+
+.project__name {
+  position: relative;
+  font-size: 20px;
+}
+
+.project__desc {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.project__info {
+  line-height: 2;
+  margin: 40px 0;
+}
+
+.project__info-item::before {
+  content: "\f105";
+  margin-right: 8px;
+  font-family: fontawesome;
+}
+
+.project__detail {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.project__detail-item {
+  width: 33.3333%;
+  text-align: center;
+  color: #999;
+}
+
+.project__detail-item span {
+  display: block;
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.project__btn-view {
+  background-color: #3f3f3f;
+  padding: 10px 60px 10px 50px;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.project__btn-view::after {
+  content: "\f061";
+  font-family: fontawesome;
+  position: relative;
+  left: 10px;
+  transition: 0.5s;
+}
+
+.project__btn-view:hover::after {
+  left: 20px;
+}
+
+.project__btn-view:hover {
+  background-color: #000;
+}
+
+.project__photo {
+  width: 75%;
+  overflow: hidden;
+}
+
+.project__tab-menu {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 25%;
+  text-align: center;
+}
+
+.project__btn-tab {
+  background-color: #222;
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 7px;
+  border-radius: 50%;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.project__btn-tab::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #bbb;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.3s;
+}
+
+.project__btn-tab:hover::before,
+#tab1:checked ~ .project__tab-menu .project__btn-tab[for=tab1]::before, 
+#tab2:checked ~ .project__tab-menu .project__btn-tab[for=tab2]::before, 
+#tab3:checked ~ .project__tab-menu .project__btn-tab[for=tab3]::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 /* Plan */
 .plan__inner {
   background-color: #1d1b24;
