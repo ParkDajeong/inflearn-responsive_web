@@ -65,6 +65,76 @@ body {
   height: calc(100% - 80px);
 }
 
+/* Home */
+.home__inner {
+  background-color: #fff;
+  position: relative;
+  height: 100%;
+}
+
+.home__inner::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  animation: overlay 0.6s 2.1s ease-in-out both;
+}
+
+.home__intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5;
+  transform: translate(-50%, -50%);
+  animation: slide-up 1.8s 0.5s linear both;
+}
+
+.home__intro-text span {
+  display: block;
+  font-size: 22px;
+}
+
+.home__intro-text .fas {
+  color: crimson;
+}
+
+.home__bg {
+  background: url(./../images/section-bg-01.jpg) no-repeat center center/cover;
+  height: 100%;
+  animation: opacity-image 1s 2.3s ease-in both;
+}
+
+.home__heading {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: 250px;
+  transform: translateY(-50%);
+}
+
+.home__heading span {
+  display: block;
+  color: #fff;
+  font-size: 115px;
+  overflow: hidden;
+  animation: reveal 0.6s 2.8s ease-in both;
+}
+
+.home__heading span:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.home__heading span:nth-child(3) {
+  animation-delay: 3.2s;
+}
+
 /* About */
 .about__inner {
   background: #0dace3 url(../images/line-drawing.png) no-repeat right bottom;
@@ -647,4 +717,52 @@ input[name=tabmenu] {
 .btn-hiring .fas {
   transform: rotateY(180deg);
   margin-right: 8px;
+}
+
+/* 애니메이션 */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  20%, 80% {
+    opacity: 1;
+    margin-top: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes overlay {
+  0% {
+    left: 0;
+    width: 0;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes opacity-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
 }

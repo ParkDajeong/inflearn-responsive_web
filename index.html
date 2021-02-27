@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DesignWorks Architecture Agency</title>
+  <link rel="icon" href="./images/favicon.png">
   <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
   <!-- Page Scroll Effects -->
   <script src="js/velocity/velocity.min.js"></script>
@@ -24,14 +25,24 @@
   <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
-
 <body data-hijacking="on" data-animation="rotate">
   <div class="container">
     <!-- Home -->
-    <section id="home" class="cd-section">
+    <section id="home" class="cd-section visible">
       <div>
         <div class="content">
-          <h2>section 1</h2>
+          <div class="home__inner">
+            <div class="home__intro-text">
+              You can do it 
+              <span>with CodingWorks <i class="fas fa-heart"></i></span>
+            </div>
+            <div class="home__bg"></div>
+            <h2 class="home__heading">
+              <span>Creative</span>
+              <span>Architecture</span>
+              <span>Specialists</span>
+            </h2>
+          </div>
         </div>
       </div>
     </section>
@@ -74,7 +85,7 @@
       </div>
     </section>
     <!-- Project -->
-    <section id="project" class="cd-section visible">
+    <section id="project" class="cd-section">
       <div>
         <div class="content">
           <div class="project__inner">
