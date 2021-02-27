@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Manrope:300,400,500,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 
 /* Reset CSS */
 * {
@@ -718,6 +719,222 @@ input[name=tabmenu] {
   transform: rotateY(180deg);
   margin-right: 8px;
 }
+
+/* SubPage - Hiring */
+.hiring {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Hiring - Header */
+.hiring__header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.hiring__header-inner {
+  width: 95%;
+  height: 90px;
+  margin: auto;
+  line-height: 90px;
+  border-bottom: 1px solid #ddd;
+}
+
+.hiring__modal-display {
+  font-size: 16px;
+}
+
+/* Hiring - Main */
+.hiring__main {
+  padding-top: 90px;
+}
+
+.hiring__heading {
+  margin: 100px 0 120px;
+  text-align: center;
+}
+
+.hiring__heading-sub {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hiring__heading-sub::before,
+.hiring__heading-sub::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+.hiring__heading-sub::before {
+  left: -100%;
+}
+
+.hiring__heading-sub::after {
+  right: -100%;
+}
+
+.hiring__title {
+  margin-top: 40px;
+  font-size: 100px;
+  font-weight: 200;
+}
+
+.hiring__article {
+  display: flex;
+}
+
+.hiring__area {
+  width: 50%;
+  height: 600px;
+}
+
+.hiring__text-area {
+  display: flex;
+  align-items: center;
+}
+
+.hiring__info {
+  padding: 0 80px;
+}
+
+.hiring__info-title {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.hiring__info-desc {
+  /* color: #555; */
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.hiring__photo-area {
+  overflow: hidden;
+}
+
+.hiring__photo {
+  width: 100%;
+}
+
+.hiring__slogan {
+  padding: 120px 0;
+}
+
+.hiring__slogan-text {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  color: #888;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.hiring__slogan-text::before {
+  content: ",,";
+  position: absolute;
+  top: -82px;
+  left: -50px;
+  color: #ddd;
+  font-family: 'Overpass', sans-serif;
+  font-size: 200px;
+  letter-spacing: -5px;
+  transform: rotate(180deg);
+}
+
+.hiring__contact-info {
+  display: flex;
+  margin-top: 50px;
+}
+
+.hiring__contact {
+  width: 50%;
+  padding-left: 8px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.hiring__info-city {
+  font-weight: 500;
+}
+
+.hiring__info-email {
+  column-rule: dodgerblue;
+}
+
+.hiring__sns-box {
+  margin-top: 18px;
+}
+
+.hiring__link-sns {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 2px;
+  color: #000;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.hiring__link-sns:hover {
+  color: #fff;
+}
+
+.hiring__link-sns::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.hiring__link-facebook::before {
+  background-color: #3b5999;
+}
+
+.hiring__link-twitter::before {
+  background-color: #55acee;
+}
+
+.hiring__link-linkedin::before {
+  background-color: #0077b5;
+}
+
+.hiring__link-insta::before {
+  background-color: #e4405f;
+}
+
+.hiring__link-youtube::before {
+  background-color: #cd201f;
+}
+
+.hiring__link-email::before {
+  background-color: #25d366;
+}
+
+.hiring__link-sns:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 
 /* 애니메이션 */
 @keyframes slide-up {
