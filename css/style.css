@@ -125,7 +125,7 @@ body {
   color: #fff;
   font-size: 115px;
   overflow: hidden;
-  animation: reveal 0.6s 2.8s ease-in both;
+  animation: reveal 0.5s 2.8s ease-in both;
 }
 
 .home__heading span:nth-child(2) {
@@ -935,6 +935,53 @@ input[name=tabmenu] {
   transform: translate(-50%, -50%) scale(1);
 }
 
+/* Sub Page - Project Detail */
+.project__main {
+  background: url(../images/project-modal-main-01.jpg) no-repeat center center/cover;
+  position: relative;
+  height: 100vh;
+}
+
+.project__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  animation: slidedown 1s linear both;
+}
+
+.project__heading-sub::before, .project__heading-sub::after {
+  background-color: #fff;
+}
+
+.project__title {
+  font-size: 70px;
+}
+
+/* Featherlight Custom CSS */
+.featherlight .featherlight-content {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+
+.featherlight .featherlight-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.featherlight .featherlight-close-icon {
+  top: 35px;
+  right: 58px;
+  width: auto;
+  color: #333;
+  font-size: 30px;
+  line-height: 1;
+}
 
 /* 애니메이션 */
 @keyframes slide-up {
@@ -981,5 +1028,16 @@ input[name=tabmenu] {
   }
   100%{
     width: 100%;
+  }
+}
+
+@keyframes slidedown {
+  0%{
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 0;
   }
 }
