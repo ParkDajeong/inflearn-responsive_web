@@ -303,4 +303,67 @@
     right: 20px;
     bottom: 20px;
   }
+
+  /* SubPage - Hiring */
+  .hiring__header-inner {
+    height: 65px;
+    line-height: 65px;
+  }
+
+  .hiring__main {
+    padding: 65px 0;
+  }
+
+  .hiring__title {
+    font-size: 40px;
+  }
+
+  .hiring__article {
+    flex-direction: column;
+  }
+
+  .hiring__area {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hiring__info {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .hiring__slogan {
+    padding: 95px 0;
+  }
+
+  .hiring__slogan-text {
+    width: 85%;
+    font-size: 20px;
+  }
+
+  .hiring__slogan-text::before {
+    top: -55px;
+    left: -17px;
+    font-size: 150px;
+    z-index: -1;
+  }
+
+  .hiring__contact-info {
+    flex-direction: column;
+  }
+
+  .hiring__contact:first-child {
+    margin-bottom: 25px;
+  }
+
+  /* Featherlight Custom CSS */
+  .featherlight .featherlight-content {
+    padding: 0;
+  }
+
+  .featherlight .featherlight-close-icon {
+    top: 23px;
+    right: 20px;
+    font-size: 25px;
+  }
 }

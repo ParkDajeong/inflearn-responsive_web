@@ -737,6 +737,7 @@ input[name=tabmenu] {
   width: 95%;
   height: 90px;
   margin: auto;
+  padding: 0 5px;
   line-height: 90px;
   border-bottom: 1px solid #ddd;
 }
@@ -747,7 +748,7 @@ input[name=tabmenu] {
 
 /* Hiring - Main */
 .hiring__main {
-  padding-top: 90px;
+  padding: 90px 0;
 }
 
 .hiring__heading {
